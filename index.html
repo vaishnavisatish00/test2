@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio | Bootstrap Edition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS */
+        .hero-section {
+            height: 60vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown">Work</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="bg-dark p-5 bg-opacity-50 rounded">
+            <h1 id="main-title">Full Stack Developer</h1>
+            <p style="font-style: italic; color: #ffca2c;">"Building the future, one line at a time."</p> </div>
+    </header>
+
+    <div class="container mt-5">
+        <section id="about" class="mb-5">
+            <h2 class="text-primary">About Me</h2>
+            <p>I am a passionate developer specializing in responsive web design. I love combining <strong>Bootstrap</strong> with custom <strong>CSS</strong> to create seamless user experiences.</p>
+        </section>
+
+        <section id="skills" class="mb-5">
+            <h3>Technical Skills</h3>
+            <table class="table table-hover table-bordered border-primary">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Technology</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>HTML5/CSS3</td><td>Expert</td></tr>
+                    <tr><td>Bootstrap 5</td><td>Advanced</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="mb-5 p-4 border rounded shadow-sm">
+            <h3>Get In Touch</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="userName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="userName" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Inquiry Type</label>
+                    <select class="form-select">
+                        <option>Freelance Project</option>
+                        <option>Full-time Role</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <a href="https://github.com" target="_blank" class="ms-3 btn btn-outline-dark">Visit GitHub (New Tab)</a>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
